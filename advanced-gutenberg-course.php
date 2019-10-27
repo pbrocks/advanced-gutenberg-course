@@ -7,7 +7,7 @@
  * @license     GPL2+
  *
  * @wordpress-plugin
- * Plugin Name: Gutenberg - Advanced Examples
+ * Plugin Name: Adv_Gutenberg_Courses - Advanced Examples
  * Plugin URI:  https://javascriptforwp.com/
  * Description: A plugin containing advanced examples for developers.  From <a href="https://javascriptforwp.com/product/advanced-gutenberg-development/">Zac Gordon's Advanced Gutenberg Development Course</a>.
  * Version:     1.0.0
@@ -21,8 +21,8 @@
 
 namespace Adv_Gutenberg_Courses\Example_Blocks;
 
-//  Exit if accessed directly.
-defined('ABSPATH') || exit;
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Gets this plugin's absolute directory path.
@@ -59,10 +59,10 @@ function _get_plugin_url() {
 
 
 // Enqueue JS and CSS
-include __DIR__ . '/lib/register-scripts.php';
+require __DIR__ . '/lib/register-scripts.php';
 
 // Register block server side
-include __DIR__ . '/lib/register-blocks.php';
+require __DIR__ . '/lib/register-blocks.php';
 
 // Register block server side
-include __DIR__ . '/lib/block-categories.php';
+require __DIR__ . '/lib/block-categories.php';
