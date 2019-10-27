@@ -57,6 +57,22 @@ function _get_plugin_url() {
 }
 
 
+/**
+ * Adding a block category creates a Panel
+ */
+function create_jsforwp_advblocks_panel( $categories, $post ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug'  => 'jsforwpadvblocks',
+				'title' => __( 'JSforWP Adv Blocks Panel', 'jsforwpadvblocks' ),
+			),
+		)
+	);
+}
+add_filter( 'block_categories', 'create_jsforwp_advblocks_panel', 10, 2 );
+
 
 // Enqueue JS and CSS
 require __DIR__ . '/lib/register-scripts.php';
