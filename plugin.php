@@ -7,10 +7,10 @@
  * @license     GPL2+
  *
  * @wordpress-plugin
- * Plugin Name: Gutenberg - Advanced Examples
+ * Plugin Name: Advanced Gutenberg Course
  * Plugin URI:  https://javascriptforwp.com/
  * Description: A plugin containing advanced examples for developers.  From <a href="https://javascriptforwp.com/product/advanced-gutenberg-development/">Zac Gordon's Advanced Gutenberg Development Course</a>.
- * Version:     1.0.0
+ * Version:     1.2.0
  * Author:      Zac Gordon
  * Author URI:  https://twitter.com/zgordon
  * Text Domain: jsforwpadvblocks
@@ -21,8 +21,8 @@
 
 namespace Adv_Gutenberg_Courses\Example_Blocks;
 
-//  Exit if accessed directly.
-defined('ABSPATH') || exit;
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Gets this plugin's absolute directory path.
@@ -59,19 +59,19 @@ function _get_plugin_url() {
 
 
 // Enqueue JS and CSS
-include __DIR__ . '/lib/register-scripts.php';
+require __DIR__ . '/lib/register-scripts.php';
 
 // Register block categories
-include __DIR__ . '/lib/block-categories.php';
+require __DIR__ . '/lib/block-categories.php';
 
 // Setup Global Block Setting Options Setting
-include __DIR__ . '/lib/wp-options.php';
+require __DIR__ . '/lib/wp-options.php';
 
 // Register REST API Endpoint
-include __DIR__ . '/lib/rest-api-endpoint.php';
+require __DIR__ . '/lib/rest-api-endpoint.php';
 
 // Register blocks server side
-include __DIR__ . '/lib/register-blocks.php';
+require __DIR__ . '/lib/register-blocks.php';
 
 // Register any PHP block filters
-include __DIR__ . '/lib/block-filters.php';
+require __DIR__ . '/lib/block-filters.php';
