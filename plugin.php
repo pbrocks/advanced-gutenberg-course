@@ -10,7 +10,7 @@
  * Plugin Name: Advanced Gutenberg Course
  * Plugin URI:  https://javascriptforwp.com/
  * Description: A plugin containing advanced examples for developers.  From <a href="https://javascriptforwp.com/product/advanced-gutenberg-development/">Zac Gordon's Advanced Gutenberg Development Course</a>.
- * Version:     1.2.0
+ * Version:     1.2.1
  * Author:      Zac Gordon
  * Author URI:  https://twitter.com/zgordon
  * Text Domain: jsforwpadvblocks
